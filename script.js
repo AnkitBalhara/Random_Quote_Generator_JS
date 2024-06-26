@@ -11,12 +11,11 @@ const options = {
 		'x-rapidapi-host': 'random-quote-api3.p.rapidapi.com'
 	}
 };
-
 async function run(){
 	container.classList.add('rotate')
 	setTimeout(() => {
 		container.classList.remove('rotate')
-	}, 100);
+	},100);
 
 	const response = await fetch(url, options);
 	const result = await response.json();
